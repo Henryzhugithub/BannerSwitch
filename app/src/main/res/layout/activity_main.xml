@@ -4,14 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.zhl.bannerswitch.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+    <FrameLayout
+        android:id="@+id/adVfLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <com.example.zhl.bannerswitch.AdViewFlipper
+            android:id="@+id/adVf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onClick">
+
+
+        </com.example.zhl.bannerswitch.AdViewFlipper>
+
+        <LinearLayout
+            android:id="@+id/adPoint"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </FrameLayout>
 </RelativeLayout>
