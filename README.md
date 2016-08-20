@@ -1,2 +1,2 @@
 # BannerSwitch
-图片轮播效果
+通过ViewFlipper控件实现图片轮播效果，支持点击时间，手动左右滑动。
